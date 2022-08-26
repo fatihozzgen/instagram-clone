@@ -84,11 +84,20 @@ function App() {
             </small>
           </label>
           <button
+            disabled={true}
             type="submit"
-            className="h-[30px] rounded bg-brand text-white text-sm"
+            className="h-[30px] rounded bg-brand text-white text-sm font-medium disabled:opacity-50"
           >
             Log In
           </button>
+          <div className="flex items-center">
+            <div className=" h-px bg-gray-300 flex-1" />
+            <span className="px-4 text-[13px] text-gray-500 font-semibold">
+              {" "}
+              OR
+            </span>
+            <div className=" h-px bg-gray-300 flex-1" />
+          </div>
         </form>
       </div>
     </div>
